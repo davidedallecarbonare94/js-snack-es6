@@ -7,7 +7,7 @@ peso
 Stampare a schermo la bici con peso minore 
 //utilizzando destructuring e template literal
 */
-const bicycles = [
+/* const bicycles = [
     {
         nome: "Cannondale",
         peso: 7.3
@@ -64,7 +64,7 @@ const markup =
 `
 document.querySelector(".container").insertAdjacentHTML("beforeend", markup);
 
-
+ */
 /* 
 Snack2:
 Creare un array di oggetti di squadre di calcio. Ogni squadra avrà diverse proprietà:
@@ -86,7 +86,7 @@ falli subiti.
 Nome sarà l’unica proprietà da compilare, le altre saranno tutte settate a 0.
 */
 
-const footballTeams = [
+/* const footballTeams = [
     {
         nomeTeam: "Milan",
         puntiFatti: 0,
@@ -138,10 +138,10 @@ const footballTeams = [
         falliSubiti: 0
     },
 ]
-
+ */
 /* Generare numeri random al posto degli 0 nelle proprietà: Punti fatti e falli subiti. */
 
-function generateRandomNumber(min, max) {
+/* function generateRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
 generateRandomNumber(0, 100)
@@ -158,4 +158,21 @@ for (key in footballTeams) {
     console.log(nomeTeam, falliSubiti);
 
 }
-console.log(footballTeams);
+console.log(footballTeams); */
+
+/* Snack 3:
+Scrivere una funzione che accetti tre argomenti, un array e due numeri (a più piccolo di b).
+La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra i due numeri.
+Usiamo i nuovi metodi degli array foreach o filter. */
+
+const myArray = [1,2,3,4,5,6,7,8,9,10]
+const lilNumb = 1;
+const bigNumb = 10;
+
+const numeriCompresi = myArray.filter((compreso) => {
+    if (compreso > lilNumb && compreso < bigNumb) {
+        return true
+    }
+    return false
+});
+console.log(numeriCompresi);
