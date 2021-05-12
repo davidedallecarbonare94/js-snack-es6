@@ -168,11 +168,14 @@ Usiamo i nuovi metodi degli array foreach o filter. */
 const myArray = [1,2,3,4,5,6,7,8,9,10]
 const lilNumb = 1;
 const bigNumb = 10;
-
-const numeriCompresi = myArray.filter((compreso) => {
-    if (compreso > lilNumb && compreso < bigNumb) {
-        return true
-    }
-    return false
-});
-console.log(numeriCompresi);
+function sonoCompreso(myArray, lilNumb, bigNumb) {
+    const numeriCompresi = myArray.filter((compreso) => {
+        if (compreso > lilNumb && compreso < bigNumb) {
+            return true
+        }
+        return false
+    });
+    
+    console.log(numeriCompresi);
+}
+sonoCompreso(myArray, lilNumb, bigNumb)
